@@ -1,0 +1,24 @@
+/*
+* Lorem Ipsum Custom Post Type
+*/
+.lorem-ipsum-single,
+.lorem-ipsum-archive {
+  img {
+    height: 40vh;
+  }
+
+  &__content {
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.6em;
+    }
+
+    p {
+      margin-top: 0.3rem;
+    }
+  }
+}

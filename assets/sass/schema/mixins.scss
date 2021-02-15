@@ -1,0 +1,14 @@
+//background image mixin
+@mixin backgroundImg($size) {
+	background-size: $size;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@mixin transition($what: all, $time: 0.5s, $how: ease-in-out) {
+	-webkit-transition: $what $time $how;
+	-moz-transition: $what $time $how;
+	-ms-transition: $what $time $how;
+	-o-transition: $what $time $how;
+	transition: $what $time $how;
+}
