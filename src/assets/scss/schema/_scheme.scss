@@ -57,7 +57,7 @@ a {
 h1 {
 	font-size: 3em;
 
-	@include media-breakpoint-down(xs) {
+	@media (max-width: 1024px) {
 		font-size: 2.5em;
 	}
 }
@@ -65,7 +65,7 @@ h1 {
 h2 {
 	font-size: 2.2em;
 
-	@include media-breakpoint-down(xs) {
+	@media (max-width: 1024px) {
 		font-size: 1.8em;
 	}
 }
@@ -113,7 +113,7 @@ ul {
 	color: $white;
 	@include transition();
 
-	@include media-breakpoint-down(md) {
+	@media (max-width: 992px) {
 		font-size: 1.2em;
 		min-width: 100px;
 	}
@@ -459,20 +459,6 @@ ul {
 
 .padding-zero {
 	padding: 0;
-}
-
-/* Hiding Blocks on different screens
-========================================================================== */
-.mobile-hide {
-	@include media-breakpoint-down(sm) {
-		display: none;
-	}
-}
-
-.tablet-desktop-hide {
-	@include media-breakpoint-up(sm) {
-		display: none;
-	}
 }
 
 /* Icons in Lists
